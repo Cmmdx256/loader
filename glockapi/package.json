@@ -1,5 +1,5 @@
 {
-  "name": "glock-api",
-  "version": "1.0.0",
-  "private": true
+  "rewrites": [
+    { "source": "/script", "destination": "/api/script" }
+  ]
 }

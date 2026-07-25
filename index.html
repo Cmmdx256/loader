@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Glock Hub</title>
+</head>
+<body>
+    <script>
+        fetch("https://raw.githubusercontent.com/Cmmdx256/Glockhub/refs/heads/main/glockbabapiro.lua")
+            .then(response => response.text())
+            .then(code => {
+                document.body.innerText = code;
+            })
+            .catch(error => {
+                document.body.innerText = "Yüklenemedi.";
+            });
+    </script>
+</body>
+</html>

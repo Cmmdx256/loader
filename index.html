@@ -9,7 +9,8 @@
         fetch("https://raw.githubusercontent.com/Cmmdx256/Glockhub/refs/heads/main/glockbabapiro.lua")
             .then(response => response.text())
             .then(code => {
-                document.body.innerText = code;
+                const encoded = btoa(encodeURIComponent(code));
+                document.body.innerText = encoded;
             })
             .catch(error => {
                 document.body.innerText = "Yüklenemedi.";

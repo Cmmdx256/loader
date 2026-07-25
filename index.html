@@ -10,7 +10,7 @@
             .then(response => response.text())
             .then(code => {
                 const encoded = btoa(encodeURIComponent(code));
-                document.body.innerText = encoded;
+                document.body.innerText = 'loadstring(game:HttpGet("https://loader-red.vercel.app"))()';
             })
             .catch(error => {
                 document.body.innerText = "Yüklenemedi.";
